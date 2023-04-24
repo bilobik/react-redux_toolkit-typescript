@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders post 1`] = `
+<h3>
+  Foo
+</h3>
+`;
