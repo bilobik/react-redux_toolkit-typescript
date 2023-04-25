@@ -1,8 +1,6 @@
-import React from 'react';
 import { fetchUsers } from "./ActionCreators";
 import { UserState, userSlice } from "./UserSlice";
 import { IUser } from "../../models/IUser";
-//const axios = require('axios')
 import axios from 'axios';
 
 jest.mock('axios');
@@ -24,7 +22,6 @@ describe("test User reduces", () => {
     const reducer = userSlice.reducer;
     const state = reducer(initialState, action);
 
-    //expect(state).toEqual({ users: [], error: null, isLoading: true });
     expect(state.isLoading).toEqual(true);
   });
 });
